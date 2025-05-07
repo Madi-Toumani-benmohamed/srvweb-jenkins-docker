@@ -7,7 +7,7 @@ node {
     checkout scm
   }
 
-  def img = stage(Build') {
+  def img = stage('Build') {
                   docker.build("$IMAGE", '.')
                   }
   stage('RUN') {
