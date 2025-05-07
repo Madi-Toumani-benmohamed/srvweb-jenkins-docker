@@ -1,6 +1,6 @@
 node {
     
-    def registryProjet='docker.io/bmaditoumani/'
+    def registryProjet='bmaditoumani/'
     def IMAGE="${registryProjet}srvweb:version-${env.BUILD_ID}"
     
     stage('Clone') {
