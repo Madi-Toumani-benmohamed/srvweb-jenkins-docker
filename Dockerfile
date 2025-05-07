@@ -1,6 +1,6 @@
 FROM nginx:latest
 
-sed -i 's/nginx/ salut les copains/g' /usr/share/nginx/html/index.html
+RUN sed -i 's/nginx/ salut les copains/g' /usr/share/nginx/html/index.html
 
 EXPOSE 80 
 
